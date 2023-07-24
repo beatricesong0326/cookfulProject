@@ -3,7 +3,7 @@
 
 'npm start' to run;
 
-'Cookful.py' file, run to read excel file, then call 'create' API, 'create' API can create a table in PostgresSQL with all recipe contents((need to be improved, then uploaded));
+'Cookful.py' file, run to read excel file, do some data cleaning, then call 'create' API. 'create' API can create a table in PostgresSQL with all recipe contents automatically((need to be improved, then uploaded));
 
 'findAll' API, used to search ingredients (need to be improved);
 
