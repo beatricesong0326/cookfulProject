@@ -60,45 +60,6 @@ exports.findAll = (req, res) => {
     });
 };
 
-/*Find a single Tutorial with an id
-exports.findOne = (req, res) => {
-  const id = req.params.id;
-
-  Tutorial.findByPk(id)
-    .then(data => {
-      res.send(data);
-    })
-    .catch(err => {
-      res.status(500).send({
-        message: "Error retrieving Tutorial with id=" + id
-      });
-    });
-};
-
-// Update a Tutorial by the id in the request
-exports.update = (req, res) => {
-  const recID = req.params.id;
-
-  Tutorial.update(req.body, {
-    where: { id: id }
-  })
-    .then(num => {
-      if (num == 1) {
-        res.send({
-          message: "Recipe was updated successfully."
-        });
-      } else {
-        res.send({
-          message: `Cannot update Tutorial with id=${id}. Maybe Tutorial was not found or req.body is empty!`
-        });
-      }
-    })
-    .catch(err => {
-      res.status(500).send({
-        message: "Error updating Tutorial with id=" + id
-      });
-    });
-};*/
 
 // Delete a Recipe with the specified id in the request
 exports.delete = (req, res) => {
@@ -125,33 +86,3 @@ exports.delete = (req, res) => {
     });
 };
 
-/* Delete all Tutorials from the database.
-exports.deleteAll = (req, res) => {
-  Tutorial.destroy({
-    where: {},
-    truncate: false
-  })
-    .then(nums => {
-      res.send({ message: `${nums} Tutorials were deleted successfully!` });
-    })
-    .catch(err => {
-      res.status(500).send({
-        message:
-          err.message || "Some error occurred while removing all tutorials."
-      });
-    });
-};
-
-// find all published Tutorial
-exports.findAllPublished = (req, res) => {
-  Tutorial.findAll({ where: { published: true } })
-    .then(data => {
-      res.send(data);
-    })
-    .catch(err => {
-      res.status(500).send({
-        message:
-          err.message || "Some error occurred while retrieving tutorials."
-      });
-    });
-};*/
