@@ -8,8 +8,6 @@ exports.health = (req, res) => {
   });
 };
 
-
-
 // Create and Save a new Receipt
 exports.create = (req, res) => {
   // Validate request
